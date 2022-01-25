@@ -1,12 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <link rel="stylesheet" href="bootstrap.css" type="text/css">
+  <link rel="stylesheet" href="styles.css" type="text/css">
+  <script src="js/jquery-3.6.0.js"></script>
+  <script src="js/scripts.js"></script>
+  <title>Movie Tickets</title>
 </head>
 <body>
-  
+<container>
+  <form id="user-entry">
+    <div class="form-group">
+      <label for="movie">Enter movie:</label>
+      <br>
+      <select name="movie" id="movie">
+      <option value="matrix">Matrix</option>
+      <option value="terminator">Terminator</option>
+      <option value="shrek">Shrek</option>
+      <option value="bambi">Bambi</option>
+    </select>
+  </div>
+  <br>
+  <div class="form-group">
+    <label for="times">Enter showing time:</label>
+    <br>
+    <select name="times" id="times">
+      <option value="matinee">Matinee</option>
+      <option value="5">5pm</option>
+      <option value="9">9pm</option>
+    </select>
+  </div>
+  <br>
+  <div class="form-group">
+    <label for="age">Enter your age:</label>
+    <br>
+    <input type="number" name="age" id="age">
+  </div>
+  <div>
+    <br>
+    <button type="submit" id="getTicket">Get your ticket!</button>
+  </div>
+  </form>
+  <br>
+  <div>
+    <span id="ticket"></span>
+  </div>
+  <br>
+  <div>
+    <span id="notEighteen"></span>
+  </div>
+</container>
 </body>
 </html>

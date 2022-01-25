@@ -1,0 +1,10 @@
+form {
+  margin: 15px;
+}
+#ticket {
+  display: none;
+}
+
+body {
+  text-align: center;
+}
